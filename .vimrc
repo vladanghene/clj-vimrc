@@ -77,7 +77,6 @@ Plug 'idris-hackers/idris-vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'einars/js-beautify'
 Plug 'Lokaltog/powerline'
-Plug 'wakatime/vim-wakatime'
 
 call plug#end()
 
@@ -355,8 +354,9 @@ autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 
 set foldmethod=indent
 set foldlevel=0
-cd ~/proj/
-
+if exists($PROJECTS)
+    cd $PROJECTS
+endif
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
 " then https://coderwall.com/p/if9mda
