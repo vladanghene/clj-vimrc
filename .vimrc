@@ -18,9 +18,13 @@ call plug#begin('~/.vim/plugged')
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dikiaap/minimalist' " minimalist theme
+Plug 'jpalardy/vim-slime' " slime for repl
+
 
 " Distraction Free Writting
 Plug 'junegunn/goyo.vim'
+
+Plug 'Yggdroot/indentLine'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
@@ -77,7 +81,7 @@ Plug 'idris-hackers/idris-vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'einars/js-beautify'
 Plug 'Lokaltog/powerline'
-Plug 'wakatime/vim-wakatime'
+Plug 'guns/vim-clojure-static'
 
 call plug#end()
 
@@ -344,7 +348,14 @@ imap éé `
 
 " --- type ° to search the word in all files in the current dir
 nmap ° :Ag <c-r>=expand("<cword>")<cr><cr>
-nnoremap <space>/ :Ag
+noremap <space>/ :Ag
+
+"http://vi.stackexchange.com/questions/84/how-can-i-copy-text-to-the-system-clipboard-from-vim
+
+noremap <Leader>y "*y
+noremap <Leader>p "*p
+noremap <Leader>Y "+y
+noremap <Leader>P "+p
 
 " -- js beautifer
 autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
@@ -353,9 +364,19 @@ autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 
 " set noswapfile
 
-set foldmethod=indent
-set foldlevel=0
-cd ~/proj/
+cd ~/proj
+noremap <F7> :tabp <CR>
+noremap <F8> :tabn <CR>
+noremap <F5> :FixWhitespace <CR>
+
+" Indent folding with manual foldsEdit
+" http://vim.wikia.com/wiki/Folding
+" If you like the convenience of having Vim define folds automatically by indent level, but would also like to create folds manually, you can get both by putting this in your vimrc:
+
+augroup vimrc
+  au BufReadPre * setlocal foldmethod=indent
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
 
 " Code from:
 " http://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
