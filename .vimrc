@@ -65,7 +65,7 @@ Plug 'tpope/vim-repeat'
 " " Plug 'paredit.vim'
 Plug 'tpope/vim-fireplace'
 " " <<< vim-fireplace dependencie
-" Plug 'tpope/vim-classpath'
+Plug 'tpope/vim-classpath'
 
 " Plug 'jpalardy/vim-slime'
 " -- ag
@@ -364,7 +364,6 @@ autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 
 " set noswapfile
 
-cd ~/proj
 noremap <F7> :tabp <CR>
 noremap <F8> :tabn <CR>
 noremap <F5> :FixWhitespace <CR>
