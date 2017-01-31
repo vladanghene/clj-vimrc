@@ -235,6 +235,8 @@ syntax on " syntax highlighting
 filetype plugin indent on "added by vlad
 set hlsearch " highlight searches
 
+let g:netrw_winsize=20
+let g:netrw_preview=1
 
 set visualbell " no beep
 
