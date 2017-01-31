@@ -234,7 +234,12 @@ set ruler		        " show the cursor position all the time
 syntax on " syntax highlighting
 filetype plugin indent on "added by vlad
 set hlsearch " highlight searches
+"added by vlad for auto folding
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
+"added by vlad for window preview of netrw file browser
 let g:netrw_winsize=20
 let g:netrw_preview=1
 
