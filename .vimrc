@@ -369,7 +369,8 @@ autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call JsBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 
-" set noswapfile
+set noswapfile
+set nobackup
 
 noremap <F7> :tabp <CR>
 noremap <F8> :tabn <CR>
