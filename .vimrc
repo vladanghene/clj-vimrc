@@ -240,7 +240,7 @@ autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
 "added by vlad for window preview of netrw file browser
-let g:netrw_winsize=20
+let g:netrw_winsize=80
 let g:netrw_preview=1
 
 set visualbell " no beep
