@@ -82,6 +82,7 @@ Plug 'maksimr/vim-jsbeautify'
 Plug 'einars/js-beautify'
 Plug 'Lokaltog/powerline'
 Plug 'guns/vim-clojure-static'
+Plug 'severin-lemaignan/vim-minimap'
 
 call plug#end()
 
@@ -369,8 +370,8 @@ autocmd FileType javascript noremap <buffer> <c-f> :call JsBeautify()<cr>
 autocmd FileType html noremap <buffer> <c-f> :call JsBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 
-set noswapfile
 set nobackup
+set noswapfile
 
 noremap <F7> :tabp <CR>
 noremap <F8> :tabn <CR>
