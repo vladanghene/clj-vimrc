@@ -15,6 +15,7 @@ call plug#begin('~/.vim/plugged')
 " ======================== "
 
 " solarized colorscheme
+Plug 'morhetz/gruvbox'
 Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dikiaap/minimalist' " minimalist theme
@@ -157,7 +158,7 @@ nmap gN <Plug>GitGutterPrevHunk
 " -- solarized theme
 set background=dark
 try
-    colorscheme minimalist
+    colorscheme gruvbox
 catch
 endtry
 
