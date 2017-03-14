@@ -247,6 +247,8 @@ let g:netrw_preview=1
 
 set visualbell " no beep
 
+
+
 " move between splits
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
@@ -401,6 +403,11 @@ augroup END
 if !exists("g:bracketed_paste_tmux_wrap")
   let g:bracketed_paste_tmux_wrap = 1
 endif
+
+if !exists($VIMPROJ)
+    let $VIMPROJ=$HOME."/vimproj/"
+endif
+cd $VIMPROJ
 
 function! WrapForTmux(s)
   if !g:bracketed_paste_tmux_wrap || !exists('$TMUX') || system('tmux -V')[5] >= '2'
