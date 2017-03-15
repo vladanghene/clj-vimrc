@@ -21,6 +21,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'dikiaap/minimalist' " minimalist theme
 Plug 'jpalardy/vim-slime' " slime for repl
 
+" Elm plugin
+
+Plug 'lambdatoast/elm.vim'
 
 " Distraction Free Writting
 Plug 'junegunn/goyo.vim'
