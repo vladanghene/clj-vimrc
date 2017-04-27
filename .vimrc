@@ -20,6 +20,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'dikiaap/minimalist' " minimalist theme
 Plug 'jpalardy/vim-slime' " slime for repl
+Plug 'flazz/vim-colorschemes' " color schemes from vim-awesome
 
 " Elm plugin
 
@@ -183,13 +184,13 @@ try
 catch
 endtry
 " search a file in the filetree
-nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
-nnoremap <space>f :split<cr> :<C-u>Unite file<cr>
-nnoremap <space>g :split<cr> :<C-u>Unite -start-insert file_rec/git<cr>
-" see the yank history
-nnoremap <space>y :split<cr>:<C-u>Unite history/yank<cr>
-" reset not it is <C-l> normally
-:nnoremap <space>r <Plug>(unite_restart)
+"nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
+"nnoremap <space>f :split<cr> :<C-u>Unite file<cr>
+"nnoremap <space>g :split<cr> :<C-u>Unite -start-insert file_rec/git<cr>
+"" see the yank history
+"nnoremap <space>y :split<cr>:<C-u>Unite history/yank<cr>
+"" reset not it is <C-l> normally
+":nnoremap <space>r <Plug>(unite_restart)
 
 " ------------------
 "       Clojure
@@ -235,6 +236,9 @@ set viminfo='20,\"50    " read/write a .viminfo file, don't store more
 			            " than 50 lines of registers
 set history=10000	    " keep 100000 lines of command line history
 set ruler		        " show the cursor position all the time
+" add 80char colorcolumn
+highlight ColorColumn ctermbg=0
+set cc=80
 
 syntax on " syntax highlighting
 filetype plugin indent on "added by vlad
