@@ -1,4 +1,4 @@
-```# vlad-vimrc
+# vlad-vimrc
 ## my vim config
 
 Use these commands to setup your vim editor
