@@ -35,7 +35,7 @@ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " completion during typing
-Plug 'neocomplcache'
+Plug 'shougo/neocomplete.vim'
 
 " Right way to handle trailing-whitespace
 Plug 'bronson/vim-trailing-whitespace'
