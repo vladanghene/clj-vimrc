@@ -251,6 +251,7 @@ autocmd BufWinEnter *.* silent loadview
 "added by vlad for window preview of netrw file browser
 let g:netrw_winsize=80
 let g:netrw_preview=1
+let g:netrw_altv=1 " this is to open files to right vertibal buffer
 
 set visualbell " no beep
 
