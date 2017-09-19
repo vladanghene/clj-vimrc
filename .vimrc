@@ -384,6 +384,7 @@ autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 set nobackup
 set noswapfile
 
+noremap <F6> :vertical resize 90 <CR>
 noremap <F7> :tabp <CR>
 noremap <F8> :tabn <CR>
 noremap <F5> :FixWhitespace <CR>
