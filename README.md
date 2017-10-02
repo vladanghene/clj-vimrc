@@ -3,7 +3,7 @@
 
 Use these commands to setup your vim editor
 
-First install [PlugInstall] (https://github.com/junegunn/vim-plug)
+First install [PlugInstall](https://github.com/junegunn/vim-plug)
 In order to do this, download plug.vim and put it in the "autoload" directory.
 
 
