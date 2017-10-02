@@ -7,12 +7,14 @@ First install [PlugInstall] (https://github.com/junegunn/vim-plug)
 In order to do this, download plug.vim and put it in the "autoload" directory.
 
 
-`wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ~/.vim/autoload/plug.vim`
+```bash
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ~/.vim/autoload/plug.vim
+```
 
 After that, run these commands to update your .vimrc to point to clj-vimrc's and to install all needed plugins and powerline
 Then you'll have it all and it should enter with default colorscheme=gruvbox
 
-```
+```bash
 ln -s clj-vimrc/.vimrc ~/.vimrc
 vim +PlugInstall +qall
 cd ~/.vim/plugged/vimproc.vim && make
