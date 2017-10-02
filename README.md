@@ -12,7 +12,9 @@ In order to do this, download plug.vim and put it in the "autoload" directory.
 After that, run these commands to update your .vimrc to point to clj-vimrc's and to install all needed plugins and powerline
 Then you'll have it all and it should enter with default colorscheme=gruvbox
 
-`ln -s clj-vimrc/.vimrc ~/.vimrc`
-`vim +PlugInstall +qall`
-`cd ~/.vim/plugged/vimproc.vim && make`
-`pip install --user git+git://github.com/Lokaltog/powerline`
+```
+ln -s clj-vimrc/.vimrc ~/.vimrc
+vim +PlugInstall +qall
+cd ~/.vim/plugged/vimproc.vim && make
+pip install --user git+git://github.com/Lokaltog/powerline
+```
