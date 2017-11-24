@@ -22,13 +22,20 @@ Plug 'dikiaap/minimalist' " minimalist theme
 Plug 'jpalardy/vim-slime' " slime for repl
 Plug 'flazz/vim-colorschemes' " color schemes from vim-awesome
 
+" nemo colorschemes
+Plug 'nightsense/nemo'
+
+" colorscheme paganini
+
+Plug 'marcopaganini/termschool-vim-theme'
+
 " Elm plugin
 
 Plug 'lambdatoast/elm.vim'
 
 " Distraction Free Writting
 Plug 'junegunn/goyo.vim'
-
+Plug 'vim-scripts/XML-Folding'
 Plug 'Yggdroot/indentLine'
 
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -65,6 +72,8 @@ Plug 'othree/xml.vim'
 " " -- Clojure
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'guns/vim-clojure-static'
+Plug 'guns/vim-clojure-highlight'
+Plug 'elmcast/elm-vim'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-repeat'
 " " Plug 'paredit.vim'
@@ -86,7 +95,6 @@ Plug 'idris-hackers/idris-vim'
 Plug 'maksimr/vim-jsbeautify'
 Plug 'einars/js-beautify'
 Plug 'Lokaltog/powerline'
-Plug 'guns/vim-clojure-static'
 Plug 'severin-lemaignan/vim-minimap'
 
 call plug#end()
