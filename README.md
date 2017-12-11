@@ -8,7 +8,8 @@ In order to do this, download plug.vim and put it in the "autoload" directory.
 
 
 ```bash
-wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim ~/.vim/autoload/plug.vim
+mkdir ~/.vim/autoload && cd ~/.vim/autoload
+wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 After that, run these commands to update your .vimrc to point to clj-vimrc's and to install all needed plugins and powerline
