@@ -13,11 +13,16 @@ wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 After that, run these commands to update your .vimrc to point to clj-vimrc's and to install all needed plugins and powerline
-Then you'll have it all and it should enter with default colorscheme=gruvbox
 
 ```bash
 ln -s clj-vimrc/.vimrc ~/.vimrc
 vim +PlugInstall +qall
+```
+Make sure you have binutils and gcc for this one:
+
+```
 cd ~/.vim/plugged/vimproc.vim && make
 pip install --user git+git://github.com/Lokaltog/powerline
 ```
+
+Finally, you'll have it all and it should enter with default colorscheme=gruvbox
