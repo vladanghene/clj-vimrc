@@ -37,13 +37,13 @@ Make sure to get yourself [Inconsolata](https://github.com/cyrealtype/Inconsolat
 Save those two files in .fonts dir or `mkdir ~/.fonts && cd ~/.fonts` if you have no .fonts folder. Next:
 
 ```
-wget https://github.com/cyrealtype/Inconsolata/blob/master/fonts/otf/Inconsolata-Bold.otf
-wget https://github.com/cyrealtype/Inconsolata/blob/master/fonts/otf/Inconsolata-Regular.otf
+wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
+wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
 ```
 
 After this run a 
 ```
-sudo fc-cache -v
+fc-cache -vf ~/.fonts
 ```
 
 There ya go ! Now you have gvim (which enables os clipboard so you can paste in other apps --- as opposed to classic vim) which looks great and has lotsa funcionality. Enjoy. Star me if you think this helped you.
