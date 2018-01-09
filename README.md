@@ -3,6 +3,9 @@
 
 Use these commands to setup your vim editor
 
+### Obviously, first clone this repo in your home folder (or where ever, but make sure to update the below link path).
+
+
 First install [PlugInstall](https://github.com/junegunn/vim-plug)
 In order to do this, download plug.vim and put it in the "autoload" directory.
 
