@@ -47,5 +47,5 @@ After this run a
 ```
 fc-cache -vf ~/.fonts
 ```
-
+Also restart the terminal and that's it !
 There ya go ! Now you have gvim (which enables os clipboard so you can paste in other apps --- as opposed to classic vim) which looks great and has lotsa funcionality. Enjoy. Star me if you think this helped you.
