@@ -1,4 +1,4 @@
-# vlad-vimrc
+# clj-vimrc
 ## a clojurian vim that feels nice and has all the coveted plugins: fireplace, autoindent, etc. and some of my personal faves : navigating between buffers and showing 80-line bar
 
 Use these commands to setup your vim editor
