@@ -33,12 +33,14 @@ Finally, you'll have it all and it should enter with default colorscheme=gruvbox
 
 # Font I recommend #
 For *bonus points*. 
-Make sure to get yourself [Inconsolata](https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf). 
+Make sure to get yourself *[Inconsolata]*(https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf) and *Inconsolata-g*. 
 Save those two files in .fonts dir or `mkdir ~/.fonts && cd ~/.fonts` if you have no .fonts folder. Next:
 
 ```
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Regular.ttf
 wget https://github.com/google/fonts/raw/master/ofl/inconsolata/Inconsolata-Bold.ttf
+wget https://github.com/chrissimpkins/codeface/raw/master/fonts/inconsolata-g/Inconsolata-g.ttf
+wget https://github.com/powerline/fonts/raw/master/Inconsolata-g/Inconsolata-g%20for%20Powerline.otf
 ```
 
 After this run a 
