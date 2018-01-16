@@ -170,7 +170,8 @@ nmap gN <Plug>GitGutterPrevHunk
 " -- solarized theme
 set background=dark
 try
-    colorscheme gruvbox
+  colorscheme gruvbox
+  let g:gruvbox_contrast_dark="hard"
 catch
 endtry
 
@@ -255,6 +256,8 @@ set hlsearch " highlight searches
 
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
+autocmd WinLeave *.* mkview
+autocmd WinEnter *.* silent loadview
 
 "added by vlad for window preview of netrw file browser
 let g:netrw_winsize=80
