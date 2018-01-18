@@ -406,7 +406,7 @@ noremap <F5> :FixWhitespace <CR>
 
 augroup vimrc
   au BufReadPre * setlocal foldmethod=indent
-  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+  au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=syntax | endif
 augroup END
 
 " Code from:
