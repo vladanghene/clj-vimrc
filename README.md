@@ -17,8 +17,10 @@ wget https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 After that, run these commands to update your .vimrc to point to clj-vimrc's and to install all needed plugins and powerline
 
+note: PATH is where you cloned this repo
+
 ```bash
-ln -s clj-vimrc/.vimrc ~/.vimrc
+ln -s *PATH*/.vimrc ~/.vimrc
 vim +PlugInstall +qall
 ```
 Make sure you have binutils and gcc for this one:
@@ -33,7 +35,7 @@ Finally, you'll have it all and it should enter with default colorscheme=gruvbox
 
 # Font I recommend #
 For *bonus points*. 
-Make sure to get yourself *[Inconsolata]*(https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf) and *Inconsolata-g*. 
+Make sure to get yourself *(Inconsolata)*[https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf] and *Inconsolata-g*. 
 Save those two files in .fonts dir or `mkdir ~/.fonts && cd ~/.fonts` if you have no .fonts folder. Next:
 
 ```
