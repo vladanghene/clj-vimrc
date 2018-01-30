@@ -35,7 +35,7 @@ Finally, you'll have it all and it should enter with default colorscheme=gruvbox
 
 # Font I recommend #
 For *bonus points*. 
-Make sure to get yourself *(Inconsolata)*[https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf] and *Inconsolata-g*. 
+Make sure to get yourself [Inconsolata](https://github.com/cyrealtype/Inconsolata/tree/master/fonts/otf) and *Inconsolata-g*. 
 Save those two files in .fonts dir or `mkdir ~/.fonts && cd ~/.fonts` if you have no .fonts folder. Next:
 
 ```
