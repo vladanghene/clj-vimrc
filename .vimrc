@@ -88,7 +88,7 @@ Plug 'rking/ag.vim'
 Plug 'lambdatoast/elm.vim'
 " --- Idris
 Plug 'idris-hackers/idris-vim'
-
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 " -- reload browser on change
 " Plug 'Bogdanp/browser-connect.vim'
 
