@@ -59,7 +59,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 " Align code
 Plug 'junegunn/vim-easy-align'
-Plug 'scrooloose/syntastic'             " syntax checker
+" Plug 'scrooloose/syntastic'             " syntax checker
+Plug 'jlanzarotta/bufexplorer'
+
 " --- Haskell
 Plug 'yogsototh/haskell-vim'            " syntax indentation / highlight
 " Plug 'enomsg/vim-haskellConcealPlus'    " unicode for haskell operators
@@ -168,12 +170,15 @@ nmap gN <Plug>GitGutterPrevHunk
 " -----------------
 
 " -- solarized theme
-set background=dark
-try
-  colorscheme gruvbox
-  let g:gruvbox_contrast_dark="hard"
-catch
-endtry
+set background=light
+
+colorscheme github
+
+" try
+"   colorscheme gruvbox
+"   let g:gruvbox_contrast_dark="hard"
+" catch
+" endtry
 
 " if (exists('+colorcolumn'))
 "     set colorcolumn=80
@@ -229,7 +234,7 @@ let g:rbpt_colorpairs = [
 	\ ['darkyellow',  'DarkOrchid3'],
 	\ ['darkred',     'firebrick3'],
 	\ ]
-
+autocmd BufEnter *.cljs,*.clj,*.cljs.hl vertical resize 80
 
 
 " #####################
@@ -395,7 +400,7 @@ autocmd FileType css noremap <buffer> <c-f> :call JsBeautify()<cr>
 set nobackup
 set noswapfile
 
-noremap <F6> :vertical resize 90 <CR>
+noremap <F6> :vertical resize 80 <CR>
 noremap <F7> :tabp <CR>
 noremap <F8> :tabn <CR>
 noremap <F5> :FixWhitespace <CR>
@@ -451,3 +456,4 @@ imap <expr> <f28> XTermPasteBegin("")
 vmap <expr> <f28> XTermPasteBegin("c")
 cmap <f28> <nop>
 cmap <f29> <nop>
+
