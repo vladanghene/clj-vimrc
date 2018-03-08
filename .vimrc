@@ -457,3 +457,17 @@ vmap <expr> <f28> XTermPasteBegin("c")
 cmap <f28> <nop>
 cmap <f29> <nop>
 
+
+" ctags configs
+" assuming you save the tags generated file in project ./.git/tags
+set tags=.git/tags;/
+set autochdir
+" and some easy mapping
+" use CTRL+\ to open definition in a new tab
+" use ALC+] to open definition in a vertical split
+
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" set current working file's pwd
+autocmd BufEnter * silent! lcd %:p:h
