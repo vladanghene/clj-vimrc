@@ -170,9 +170,8 @@ nmap gN <Plug>GitGutterPrevHunk
 " -----------------
 
 " -- solarized theme
-set background=light
-
-colorscheme github
+set background=dark
+colorscheme gruvbox
 
 " try
 "   colorscheme gruvbox
