@@ -64,6 +64,8 @@ Plug 'jlanzarotta/bufexplorer'
 
 " --- Haskell
 Plug 'yogsototh/haskell-vim'            " syntax indentation / highlight
+Plug 'nathanaelkane/vim-indent-guides'
+
 " Plug 'enomsg/vim-haskellConcealPlus'    " unicode for haskell operators
 " Plug 'eagletmt/ghcmod-vim'
 " Plug 'eagletmt/neco-ghc'
@@ -104,7 +106,8 @@ call plug#end()
 " PowerLine config "
 " ================ "
 
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+set rtp+=/Users/wcc/.vim/plugged/powerline/powerline/bindings/vim
+set guifont=Inconsolata_for_Powerline:h15
 
 " Always show statusline
 set laststatus=2
@@ -264,7 +267,7 @@ autocmd WinLeave *.* mkview
 autocmd WinEnter *.* silent loadview
 
 "added by vlad for window preview of netrw file browser
-let g:netrw_winsize=80
+let g:netrw_winsize=30
 let g:netrw_preview=1
 let g:netrw_altv=1 " this is to open files to right vertibal buffer
 
@@ -282,14 +285,21 @@ noremap <C-l> <C-w>l
 cmap w!! w !sudo tee >/dev/null %
 
 " Tabulation management
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces "
+
+"set tabstop=2
+"set softtabstop=2 "if you want vim to insert spaces instead of tabs
+"set shiftwidth=2
+"set expandtab
+"set autoindent
+"set smartindent
+"set cindent
+"set cinoptions=(0,u0,U0
+
 set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
-set smartindent
-set cindent
-set cinoptions=(0,u0,U0
+set softtabstop=0 noexpandtab
+set shiftwidth=4
+
 
 " Spellchecking
 if has("spell") " if vim support spell checking
